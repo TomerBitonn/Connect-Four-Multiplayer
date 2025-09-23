@@ -5,7 +5,7 @@ Two players can join the same game using a shared game code and play in real tim
 
 👉 **[Play the live demo here!](https://connect-four-multiplayer.onrender.com/)**
 
-⚠️ Note: The Render deployment may **shut down after inactivity** (free plan).  
+**Note:** The Render deployment may **shut down after inactivity** (free plan).  
 First load might take a few seconds to spin up the server.
 
 ---
