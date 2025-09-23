@@ -5,7 +5,7 @@ let url = require('url');
 const fs = require('fs');           
 const path = require('path');  
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Import game logic functions 
 const { createGame, joinGame, getState, makeMove } = require('./game');
@@ -146,7 +146,7 @@ const server = http.createServer((req, res) => {
 });
 
 
-// Listen to PORT 3000
+// Listen to PORT 
 server.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`); 
 });
