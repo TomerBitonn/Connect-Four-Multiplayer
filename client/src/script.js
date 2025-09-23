@@ -79,7 +79,10 @@ async function makeMove(column) {
   const data = await res.json();
 
   if (!data.success) {
-    alert(data.message);
+    if (data.message !== "Invalid move") {
+      alert(data.message);
+    }
+    return;
   }
 }
 
