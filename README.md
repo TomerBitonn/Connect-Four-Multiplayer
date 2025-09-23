@@ -29,7 +29,7 @@ First load might take a few seconds to spin up the server.
 ---
 
 ## 📸 Screenshot
-![Game Screenshot](assets/screenshot.png)
+![Game Screenshot](assets/connect-four-screenshot.png)
 
 ---
 
