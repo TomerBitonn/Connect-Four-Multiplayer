@@ -1,0 +1,21 @@
+name: Deploy to Render
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Trigger Render Deploy
+        env:
+          RENDER_API_KEY: ${{ secrets.CONNECT_FOUR_PRODUCTION_RENDER }}
+        run: |
+          curl -X POST "https://api.render.com/v1/services/srv-d39ib5re5dus73bgbt10/deploys" \
+          -H "Accept: application/json" \
+          -H "Authorization: Bearer $RENDER_API_KEY"
